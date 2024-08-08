@@ -1,0 +1,15 @@
+.highscores {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .highscores ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .highscores li {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  

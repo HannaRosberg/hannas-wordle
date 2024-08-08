@@ -1,0 +1,186 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #DFBFFF;
+  min-height: 100vh;
+  font-size: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+label, input, button {
+  margin: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.about{
+  font-size: 20px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ddd;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+.cell.correct {
+  background-color: green;
+  color: white;
+}
+
+.cell.misplaced {
+  background-color: yellow;
+  color: black;
+}
+
+.cell.wrong {
+  background-color: red;
+  color: white;
+}
+
+.cell.hidden {
+  visibility: hidden;
+}
+
+.settings {
+  margin: 20px 0;
+}
+
+.settings label {
+  font-size: 20px;
+  display: block;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.guess-input {
+  margin: 20px 0;
+  
+}
+
+.guess-input label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.guess-input input[type="text"] {
+  font-size: 1.5em; 
+  padding: 5px; 
+  margin-left: 10px; 
+  border: 2px solid purple; 
+  border-radius: 5px; 
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.settings input[type="number"] {
+  font-size: 20px;
+  padding: 5px;
+  margin-left: 10px;
+  border: 2px solid purple; 
+  border-radius: 5px;
+}
+
+.settings input[type="checkbox"] {
+  width: 20px;
+  height: 20px; 
+  margin-left: 10px;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.keyboard button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 2px solid purple;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.keyboard button:hover {
+  background-color: #ccc;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keyboard-row {
+  display: flex;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.incorrect {
+  background-color: red;
+  color: white;
+}
+

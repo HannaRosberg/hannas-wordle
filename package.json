@@ -1,0 +1,17 @@
+{
+  "name": "hannas-wordle",
+  "version": "1.0.0",
+  "description": "Hanna's Wordle Game",
+  "scripts": {
+    "start": "cd wordle-game && npm run build && cd ../wordle-backend && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd wordle-backend && npm start",
+    "client": "cd wordle-game && npm start",
+    "install-all": "npm install && cd wordle-backend && npm install && cd ../wordle-game && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "open": "^10.1.0",
+    "react-router-dom": "^6.23.1"
+  }
+}
